@@ -11,3 +11,13 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+alias   salpackdb="efm_sql.py"
+alias   salpacklog="tail -500f /var/log/salpack/salpack.log"
+alias   git-md-update="git checkout minnesota-develop; git pull; git checkout -"
+alias   git-sd-update="git checkout feature/APPS-5620-safeguard-develop; git pull; git checkout -"
+alias   git-d-update="git checkout develop; git pull; git checkout -"
+
+autoload -U select-word-style
+select-word-style bash
+
+bindkey -e
